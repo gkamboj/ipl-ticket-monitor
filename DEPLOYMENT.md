@@ -41,7 +41,6 @@ GitHub Actions is a free service that can run your script on a schedule. This is
 3. Set up GitHub Variables:
    - Go to your repository → _Settings_ → _Secrets and variables_ → _Actions_ -> _Variables_ -> _Repository variables_
    - Add the following variables:
-     - `CRON_SCHEDULE`: Cron expression for the schedule (e.g. `*/5 * * * *` for every 5 minutes). Workflow file (`.github/workflows/ticket_monitor.yml`) is already configured to run on this schedule.
      - `MONITOR_MATCH_IDENTIFIER`: Match identifier on webpage (e.g. `Delhi Capitals vs Gujarat Titans`)
      - `MONITOR_MATCH_URL`: URL of the match page (e.g. `https://www.district.in/events/delhi-capitals-team`)
      - `DISTRICT_NOTIFY_STATUSES`: Comma-separated list of statuses for which notification is to be sent (e.g. `["Book tickets", "Coming soon"]`)

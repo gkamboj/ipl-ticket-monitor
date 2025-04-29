@@ -24,7 +24,7 @@ district_config = config['platforms']['district']
 if config['monitor']['platform'] == 'district' and district_config['enabled'] and os.environ.get('MONITOR_MATCH_IDENTIFIER') and district_config['base_url'] in monitor_url:
     config['monitor']['url'] = os.environ.get('MONITOR_URL')
     config['monitor']['match_identifier'] = os.environ.get('MONITOR_MATCH_IDENTIFIER')
-    notify_statuses = [status.strip() for status in os.environ.get('NOTIFY_STATUSES').split(',')]
+    notify_statuses = [status.strip() for status in os.environ.get('DISTRICT_NOTIFY_STATUSES').split(',')]
     district_config['notify_statuses'] = notify_statuses
 else:
     logger.error("Invalid platform or missing URL, match identifier. Please check the environment variables.")

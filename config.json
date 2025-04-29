@@ -1,0 +1,33 @@
+{
+  "monitor": {
+    "platform": "district",
+    "url": "",
+    "match_identifier": ""
+  },
+  "email": {
+    "enabled": true,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender_email": "",
+    "sender_password": "",
+    "recipient_email": ""
+  },
+  "telegram": {
+    "enabled": true,
+    "bot_token": "",
+    "chat_id": ""
+  },
+  "platforms": {
+    "district": {
+      "enabled": true,
+      "base_url": "https://www.district.in",
+      "possible_statuses": [
+        "Book tickets",
+        "Coming soon"
+      ],
+      "notify_statuses": [
+        "Coming soon"
+      ]
+    }
+  }
+}

@@ -55,7 +55,3 @@ While this is primarily a personal project, I welcome:
 - Bug reports via Issues
 - Platform adapters for other ticketing sites
 - Documentation improvements
-
----
-
-💡 **Pro Tip**: Combine this with [Telegram's notification channels](https://core.telegram.org/api/links#t-me-links) to get alerts even when you're not checking your phone!

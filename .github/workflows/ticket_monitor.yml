@@ -1,7 +1,6 @@
 name: IPL Ticket Monitor
 on:
   schedule:
-    # Run every 5 minutes
     - cron: '${{ vars.CRON_SCHEDULE }}'
   workflow_dispatch:
 
